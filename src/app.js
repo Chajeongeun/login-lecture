@@ -5,7 +5,7 @@ const express = require("express");
 const app = express(); //app변수안에 넣어주기
 
 // 라우팅
-const home = require("./routes/home") // home을 정의, 리콰이얼해서 폴더 불러오기
+const home = require("../routes/home") // home을 정의, 리콰이얼해서 폴더 불러오기
 
 // 앱 세팅
 app.set("views", "./views"); //화면 view 관리해줄 폴더이름을 두번째 파라미터로 넘겨줌
