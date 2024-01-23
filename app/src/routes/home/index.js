@@ -7,5 +7,6 @@ const ctrl = require("./home.ctrl")
 
 router.get("/", ctrl.home); //원래 app.get> router.get으로
 router.get("/login", ctrl.login);
+// router.post("/login", ctrl.login); //프론트에서 받을 api
 
 module.exports = router; // 라우터를 외부로부터 사용할 수 있도록 내보내기 명령
