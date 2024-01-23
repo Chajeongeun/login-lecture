@@ -20,6 +20,9 @@ function login() {
         },
         body: JSON.stringify(req) //req를 json 형태로 감싸줘야함
     })
+    .then((res) => res.json()) // fetch로 넣고 응답한 데이터를 다시 받기위해
+    .then((res) => console.log(res)); //success: true or false
+    //res.json의 반환값은 promise로 오는구나~
 
 }
 
